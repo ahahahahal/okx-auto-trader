@@ -1,0 +1,68 @@
+{
+  "okx": {
+    "api_key": "YOUR_OKX_API_KEY",
+    "secret": "YOUR_OKX_SECRET",
+    "password": "YOUR_OKX_PASSPHRASE",
+    "sandbox": false
+  },
+  "proxy": {
+    "enabled": true,
+    "protocol": "socks5",
+    "host": "127.0.0.1",
+    "port": 1080,
+    "username": "",
+    "password": ""
+  },
+  "trading": {
+    "symbols": [
+      "SNDK/USDT:USDT",
+      "ETH/USDT:USDT",
+      "SOL/USDT:USDT"
+    ],
+    "primary_symbol": "SNDK/USDT:USDT",
+    "leverage": 50,
+    "position_mode": "long_short",
+    "margin_mode": "cross",
+    "trade_mode": "paper",
+    "trade_interval_seconds": 60
+  },
+  "risk_management": {
+    "max_position_size_pct": 5.0,
+    "stop_loss_pct": 2.0,
+    "take_profit_pct": 4.0,
+    "trailing_stop_pct": 1.5,
+    "max_open_positions": 3,
+    "max_daily_loss_pct": 10.0,
+    "cooldown_after_fill_seconds": 5,
+    "kelly_fraction": 0.25,
+    "use_kelly_criterion": false
+  },
+  "indicators": {
+    "rsi_period": 14,
+    "rsi_overbought": 70,
+    "rsi_oversold": 30,
+    "macd_fast": 12,
+    "macd_slow": 26,
+    "macd_signal": 9,
+    "bb_period": 20,
+    "bb_std_dev": 2.0,
+    "volume_ma_period": 20,
+    "volume_spike_threshold": 1.5,
+    "ema_fast": 9,
+    "ema_slow": 21,
+    "atr_period": 14,
+    "signal_threshold": 3
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "trader.log",
+    "trade_log": "trades.csv",
+    "max_log_size_mb": 50
+  },
+  "notifications": {
+    "enabled": false,
+    "discord_webhook": "",
+    "telegram_bot_token": "",
+    "telegram_chat_id": ""
+  }
+}
