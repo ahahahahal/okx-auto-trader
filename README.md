@@ -1,5 +1,13 @@
 # OKX Automated Trader
 
+> **中文导读**：这是一个跑在 OKX 上的**多指标自动交易脚本**，支持 SNDK（代币化股票）、ETH、SOL 永续合约。
+> 核心是多指标打分系统（RSI / MACD / 布林带 / EMA / 随机 RSI / 量能），
+> 综合打分 ≥3 做多、≤-3 做空，中间不动。带仓位管理、止损止盈、移动止损、防插针冷却。
+> **默认模拟盘（paper）**，用 `--live` 才切实盘。国内访问需配 SOCKS5/HTTP 代理。
+>
+> 快速上手：`pip install -r requirements.txt` → 在 `config.json` 填 API 密钥 → `python trader.py`。
+> 详见下方完整英文文档。
+
 Automated trading script for OKX exchange with technical analysis and risk management. Supports SNDK (tokenized stock), ETH, and SOL futures contracts.
 
 ## Features
